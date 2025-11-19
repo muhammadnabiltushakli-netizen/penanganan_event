@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>onkeyup</h2>
+
+        <p>Suatu fungsi saat pengguna melepaskan tombol di bidang input.</p>
+        <p>Fungsi ini mengubah bidang masukan menjadi huruf besar:</p>
+
+        Masukkan nama Anda:
+        <input type="text" id="fname" onkeyup="myFunction()">
+
+    <script>
+        function myFunction() {
+            let x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+
+</body>
+</html>

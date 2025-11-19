@@ -1,0 +1,36 @@
+*<!DOCTYPE html>
+<html>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            border: 1px solid black;
+        }
+    </style>
+
+<body>
+
+    <div onmousemove="myFunction(event)" onmouseout="clearCoor()"></div>
+
+        <p>Arahkan kursor pada persegi panjang di atas, dan dapatkan koordinat penunjuk mouse Anda.</p>
+
+        <p>Saat mouse digerakkan ke atas div, elemen p akan menampilkan koordinat horizontal dan vertikal penunjuk mouse Anda, yang nilainya dikembalikan dari properti clientX dan clientY pada objek
+            MouseEvent.</p>
+
+        <p id="demo"></p>
+
+    <script>
+        function myFunction(e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            let coor = "Coordinates: (" + x + "," + y + ")";
+                document.getElementById("demo").innerHTML = coor;
+            }
+
+    function clearCoor() {
+            document.getElementById("demo").innerHTML = "";
+        }
+    </script>
+
+</body>
+</html>

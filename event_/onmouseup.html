@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>The onmousedown Event</h2>
+
+        <p>Perhatikan teks di bawah ini!</p>
+        <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+            Fungsi mouseDown() mengatur warna teks ini menjadi kuning.
+            Fungsi mouseUp() mengatur warna teks ini menjadi biru.
+        </p>
+
+    <script>
+        function mouseDown() {
+            document.getElementById("myP").style.color = "yellow";
+        }
+
+        function mouseUp() {
+            document.getElementById("myP").style.color = "blue";
+        }
+</script>
+</body>
+</html>
